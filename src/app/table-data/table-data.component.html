@@ -1,0 +1,47 @@
+<div class="container" style="height: 300px;overflow:auto;">
+  <div>
+    <br>
+    <div style="float:right;cursor:pointer;">
+         <img src="assets/close_icon.png" (click)="closeTable()" width="50" height="50">
+       </div>
+    <div class="form-group" style="width:300px;">
+     
+      <input type="text" [(ngModel)]="searchTable" placeholder="Search #" class="form-control" id="usr">
+       
+    </div>
+   
+  </div>
+  
+  <table class="table table-inverse" >
+    <thead>
+      <tr>
+        <th>ALI ANI</th>
+        <th>ALI Name</th>
+        <th>PSAP Name</th>
+        <th>ALI Class</th>
+        <th>Seizure DateTime</th>
+        <th>ALI Latitude</th>
+        <th>ALI Longitude</th>
+        <th>ALI Address Line 1</th>
+        <th>ALI Address Line 2</th>
+        <th>ALI City</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let calls of dataTable | dataTable: 'ani' : searchTable">
+        <td style="cursor:pointer;" (click)="zoomToMap(calls)">{{calls.ani}}</td>
+        <td>{{calls.ali_name}}</td>
+        <td>{{calls.psap_name}}</td>
+        <td>{{calls.ali_class}}</td>
+        <td >{{calls.tmestmp}}</td>
+        <td >{{calls.lat}}</td>
+        <td >{{calls.lng}}</td>
+        <td >{{calls.address}}</td>
+        <td >{{calls.address2}}</td>
+        <td >{{calls.city}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,63 @@
+<div id="menuPanel" class="menuPanel" >
+  <button id="bclosePanel" (click)="expression" class="maps-sprite-settings-chevron-left widget-settings-icon-close"><img src="assets/double_left_32.png" /></button>
+   <div class="ulmenu">
+           <a href="http://www.lrgvdc911.org"><h2>
+               <span style="color:#2196f3">LRGVDC</span>
+               <span style="color:#D32F2F">9-1-1</span>
+           </h2></a>
+   </div>
+   
+   <hr>
+   <div>
+       <img src="https://gis.lrgvdc911.org/img/police_badge_32.png">
+       <span id="law" class="lawclass"></span>
+   </div>
+   <div>
+       <img src="https://gis.lrgvdc911.org/img/phone_24.png">
+       &nbsp;&nbsp;<span id="lawphone"></span>
+   </div>
+   <hr>
+   <div>
+       <img src="https://gis.lrgvdc911.org/img/ambulance_32.png">
+       <span id="medical" class="medicalclass"></span>
+   </div>
+   <div>
+       <img src="https://gis.lrgvdc911.org/img/phone_24.png">
+       &nbsp;&nbsp;<span id="medicalphone"></span>
+   </div>
+   <hr>
+   <div>
+       <img src="https://gis.lrgvdc911.org/img/fire_truck_32.png">
+       <span id="fire" class="fireclass"></span>
+   </div>
+   <div>
+       <img src="https://gis.lrgvdc911.org/img/phone_24.png">
+       &nbsp;&nbsp;<span id="firephone"></span>
+   </div>
+
+<hr>
+<div>
+ <h1 style="color:#2196f3">Legend</h1>
+</div>
+<hr>
+<div>
+ &nbsp;&nbsp;
+ <input type="checkbox" id="checkLAW" (click)="changeLayer(2)" class="checkBoxes">
+ &nbsp;&nbsp;
+ <span class="lawclass">LAW</span><br>
+ &nbsp;&nbsp;
+ <input type="checkbox" id="checkEMS" (click)="changeLayer(3)" class="checkBoxes">
+ &nbsp;&nbsp;
+ <span id="medical" class="medicalclass">
+ EMS
+ </span>
+ <br>
+ &nbsp;&nbsp;
+ <input type="checkbox" id="checkFIRE" (click)="changeLayer(4)" class="checkBoxes">
+ &nbsp;&nbsp;
+ <span class="fireclass">FIRE</span><br>
+
+ &nbsp;&nbsp;
+</div>
+<hr>
+</div>

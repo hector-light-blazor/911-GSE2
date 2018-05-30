@@ -1,0 +1,37 @@
+.menuPanel {
+    background-color: white;
+    width: 310px;
+    height: 100%;
+    
+    float:left;
+    left: 0;
+    margin-left: 0px;
+    border-radius: 1px;
+    overflow: auto;
+    box-shadow: 2px 2px 2px 1px #424242;
+}
+
+.list-group-item:hover{
+    cursor: pointer;
+    background: #2196f3;
+}
+
+.colorB {
+    background: #424242;
+    color:white;
+    border: 1px solid #2196f3;
+}
+
+.active{
+    background: #2196f3;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
