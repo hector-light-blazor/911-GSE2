@@ -9,7 +9,7 @@ import { AppServiceService } from './app-service.service';
 export class AppComponent {
   title = 'app';
 
-  constructor(private _appService: AppServiceService){
+  constructor(public _appService: AppServiceService){
     
     document.body.style.background = "url('assets/wallpaper.jpg')";
      

@@ -35,7 +35,7 @@ export class MapComponent implements OnInit {
   lawArr = [];
   fireArr = [];
 
-  protected searchStr: string;
+  searchStr: string;
 
 
   closeTableBool:boolean = false;
@@ -141,6 +141,8 @@ export class MapComponent implements OnInit {
           this.loadSpecialHEMSLayers();
         }else if(value == 7){
           this.loadSpecialDPSLayers();
+        }else if(value == 8) {
+          this.loadSpecialMcallenFireLayers();
         }
 
     });
@@ -411,6 +413,14 @@ export class MapComponent implements OnInit {
     this.map.addLayer(this.dpsTransferCallsLayer);
     this.getDPSTransfer('transferCallsDPS/')
     this.getDPSTransferLoop('transferCallsDPS/');
+  }
+
+  loadSpecialMcallenFireLayers() {
+    
+
+    this.map.addLayer(this.dpsTransferCallsLayer);
+    this.getDPSTransfer('transferCallsMcallenFire/')
+    this.getDPSTransferLoop('transferCallsMcallenFire/');
   }
 
   getDPSTransfer(name:string):void{

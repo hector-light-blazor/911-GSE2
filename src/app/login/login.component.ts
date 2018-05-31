@@ -7,9 +7,9 @@ import { AppServiceService } from '../app-service.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  private  username:string="";
-  private  password:any="";
-  constructor(private _appService: AppServiceService) { }
+    username:string="";
+    password:any="";
+  constructor(public _appService: AppServiceService) { }
 
   ngOnInit() {
   }
@@ -40,6 +40,11 @@ export class LoginComponent implements OnInit {
             var self = this;
             setTimeout(function() {
               self._appService.controlMap(7);
+            }, 200);
+          }else if(this.username == "mcallenfire") {
+            var self = this;
+            setTimeout(function() {
+              self._appService.controlMap(8);
             }, 200);
           }
 

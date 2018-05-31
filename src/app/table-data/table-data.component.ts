@@ -9,7 +9,7 @@ export class TableDataComponent implements OnInit {
   @Input() dataTable:any;
   @Output() closeUpdate = new EventEmitter<any>();
   @Output() zoomTo = new EventEmitter<any>();
-  private searchTable:string;
+  searchTable:string;
   constructor() { }
 
   ngOnInit() {
